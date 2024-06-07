@@ -3,22 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KiwiBat Test</title>
+    <title>Galleria di Immagini</title>
     <style>
-        html {
-            padding: 1em;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-container {
+            margin: 10px;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .image-container button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
         }
     </style>
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-          .dropdown-menu .dropdown-item {
-            text-align: center;
-          }
-    </style>
-        <style>
-          .spaced {
-              margin-bottom: 5px; /* Aggiunge 20px di spazio sotto l'elemento */
-          }
-      </style>
 </head>
+<body>
+    <h1>Galleria di Immagini</h1>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://via.placeholder.com/200" alt="Immagine 1">
+            <button>Vedi Dettagli</button>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/200" alt="Immagine 2">
+            <button>Vedi Dettagli</button>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/200" alt="Immagine 3">
+            <button>Vedi Dettagli</button>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/200" alt="Immagine 4">
+            <button>Vedi Dettagli</button>
+        </div>
+    </div>
+</body>
+</html>
